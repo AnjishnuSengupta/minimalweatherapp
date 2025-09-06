@@ -12,7 +12,7 @@ class WeatherPage extends StatefulWidget {
 
 class _WeatherPageState extends State<WeatherPage>
     with SingleTickerProviderStateMixin {
-  final _weatherService = WeatherService(); // No API key needed for Open-Meteo
+  final _weatherService = WeatherService(); // WeatherAPI with API key
   Weather? _weather;
   bool _isLoading = true;
   String? _errorMessage;
@@ -129,6 +129,14 @@ class _WeatherPageState extends State<WeatherPage>
               ? _buildErrorState()
               : _buildWeatherContent(),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          _weatherService.testLocation();
+        },
+        child: Icon(Icons.bug_report),
+        backgroundColor: Colors.orange,
+        tooltip: 'Test Location',
       ),
     );
   }

@@ -18,7 +18,7 @@ A beautiful, modern Flutter weather application that provides real-time weather 
 - 🌈 **Dynamic Weather Animations** - Lottie animations that match current weather conditions
 - 📱 **Cross-Platform** - Runs on Android, iOS, Web, Windows, macOS, and Linux
 - 🔄 **Real-time Updates** - Pull-to-refresh functionality for latest weather data
-- 🎯 **Accurate Weather Data** - Powered by Open-Meteo API for reliable forecasts
+- 🎯 **Accurate Weather Data** - Powered by WeatherAPI for reliable forecasts
 - ⚡ **Fast & Lightweight** - Optimized performance with minimal resource usage
 - 🎭 **Smooth Animations** - Fade and slide transitions for enhanced user experience
 
@@ -44,7 +44,15 @@ A beautiful, modern Flutter weather application that provides real-time weather 
    flutter pub get
    ```
 
-3. **Run the app**
+3. **Set up WeatherAPI**
+   - Sign up for a free API key at [WeatherAPI.com](https://www.weatherapi.com/signup.aspx)
+   - Open the `.env` file in the project root
+   - Replace `your_api_key_here` with your actual API key:
+     ```
+     WEATHER_API_KEY=your_actual_api_key_here
+     ```
+
+4. **Run the app**
    ```bash
    flutter run
    ```
@@ -90,14 +98,16 @@ lib/
 | `geocoding` | ^4.0.0 | Address to coordinates conversion |
 | `lottie` | ^3.3.1 | Weather animations |
 | `cupertino_icons` | ^1.0.8 | iOS-style icons |
+| `flutter_dotenv` | ^5.1.0 | Environment variables management |
 
 ## 🌐 API
 
-This app uses the [Open-Meteo API](https://open-meteo.com/) for weather data:
-- **Free to use** - No API key required
+This app uses the [WeatherAPI](https://www.weatherapi.com/) for weather data:
+- **API Key Required** - Sign up for free at [WeatherAPI.com](https://www.weatherapi.com/signup.aspx)
 - **Reliable** - High uptime and accurate data
-- **Global coverage** - Weather data worldwide
+- **Global coverage** - Weather data worldwide  
 - **Real-time** - Current conditions and forecasts
+- **Rich Data** - Includes weather icons, UV index, feels-like temperature, and more
 
 ## 🎨 Design Philosophy
 
@@ -165,7 +175,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [Open-Meteo](https://open-meteo.com/) for providing free weather API
+- [WeatherAPI](https://www.weatherapi.com/) for providing accurate weather data
 - [LottieFiles](https://lottiefiles.com/) for beautiful weather animations
 - Flutter team for the amazing framework
 - All contributors and users of this app
