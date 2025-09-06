@@ -4,6 +4,7 @@ A beautiful, modern Flutter weather application that provides real-time weather 
 
 <div align="center">
 
+![Flutter CI](https://github.com/AnjishnuSengupta/minimalweatherapp/workflows/Flutter%20CI/badge.svg)
 ![Flutter](https://img.shields.io/badge/Flutter-3.9.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.9.0-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -46,11 +47,15 @@ A beautiful, modern Flutter weather application that provides real-time weather 
 
 3. **Set up WeatherAPI**
    - Sign up for a free API key at [WeatherAPI.com](https://www.weatherapi.com/signup.aspx)
-   - Open the `.env` file in the project root
-   - Replace `your_api_key_here` with your actual API key:
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Edit the `.env` file and replace `your_api_key_here` with your actual API key:
      ```
      WEATHER_API_KEY=your_actual_api_key_here
      ```
+   - **Important**: Never commit the `.env` file to version control!
 
 4. **Run the app**
    ```bash
