@@ -5,8 +5,8 @@ A beautiful, modern Flutter weather application that provides real-time weather 
 <div align="center">
 
 ![Flutter CI](https://github.com/AnjishnuSengupta/minimalweatherapp/workflows/Flutter%20CI/badge.svg)
-![Flutter](https://img.shields.io/badge/Flutter-3.9.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-3.9.0-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-3.35.3-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.9.2-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Android%20|%20iOS%20|%20Web%20|%20Windows%20|%20macOS%20|%20Linux-lightgrey?style=for-the-badge)
 
@@ -27,7 +27,7 @@ A beautiful, modern Flutter weather application that provides real-time weather 
 
 ### Prerequisites
 
-- Flutter SDK (3.9.0 or higher)
+- Flutter SDK (3.35.0 or higher)
 - Dart SDK (3.9.0 or higher)
 - Android Studio / VS Code with Flutter extensions
 - Git
